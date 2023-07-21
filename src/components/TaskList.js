@@ -10,7 +10,7 @@ const TaskList = () => {
 
   const fetchTasks = async () => {
     try {
-      const response = await axios.get('https://localhost:7130/tasks');
+      const response = await axios.get('https://localhost:7130/api/tasks');
       setTasks(response.data);
     } catch (error) {
       console.error('Error fetching tasks:', error);

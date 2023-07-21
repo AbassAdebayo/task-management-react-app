@@ -14,7 +14,7 @@ const CreateTask = () => {
     axios.post('https://localhost:7130/api/task/createtask', newTask)
       .then((response) => {
         console.log('Task created:', response.data);
-        // Optionally, you can update the task list or show a success message
+       //
       })
       .catch((error) => {
         console.error('Error creating task:', error);
